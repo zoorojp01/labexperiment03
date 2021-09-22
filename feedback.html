@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <script src="https://kit.fontawesome.com/f377f4f9d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <style>
+    body
+    {
+      background-image:url("image53.jpeg");
+      background-size: cover;
+    }
+    .navbar{width:100%;}
+    #n1{position: fixed;}
+    #l1{color:rgb(98, 233, 170)}
+    #c1{color:ghostwhite;}
+    #c1:hover{color:palevioletred;}
+    #m1{background-color: lightsteelblue;color: lightyellow;}
+    #m2:hover{color:blue;background-color: lightgreen;}
+    #b1{ color:rgb(193, 236, 75);}
+    #b6{color:red;}
+    #b7{color:snow;}
+    #b3{color:snow;text-decoration: none;}
+    #b5{background-color: teal;}
+    #b5:hover{background-color: thistle;}
+    #x1{color: blue;}
+
+    #cha1{width: 50%;margin-left: 25%;margin-top: 100px;background-color: burlywood;}
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron" style="margin-bottom:0px;">
+      <h1>Travell Feedback</h1>
+      <p>Fill your feedback here.</p>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark " id="n1" style="height:50px"> 
+        <a class="navbar-brand" href="#" id="l1">
+          <img src="image27.jpeg" width=30 height=30 class="d-inline-block align-top">
+          TOURISM
+        </a>
+      
+        <div class="navbar-collapse" >
+           <ul class="navbar-nav mr-auto">
+            <li class="nav-item active ">
+              <a class="nav-link" id="c1" href="home.html" target="_blank"><i class="fa fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="c1"><i class="fa fa-cogs" aria-hidden="true"></i>Settings</a>
+            </li>
+        <!--   <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="c1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Visit
+              </a>
+              <div class="dropdown-menu" id="m1" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" id="m2" href="#" target="_blank">feedback</a>
+                <a class="dropdown-item" id="m2" href="form.html" target="_blank">Login</a>
+                <a class="dropdown-item" id="m2" href="index.html" target="_blank">Index</a>
+              </div>
+            </li> -->
+          </ul>
+          
+          <button class="btn btn-dark mx-2"><a href="form.html" target="_blank" id="b1"><i class="fas fa-sign-in-alt"  fill="currentColor" fill-rule="evenodd"></i></a></button>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="b5" type="submit"><a href="https://www.google.com/" target="_blank" id="b3">Search</a></button>
+          </form>
+          <button class="btn btn-dark mx-2"><a href="form.html" target="_blank" id="b6"><i class="fas fa-sign-out-alt"></i></a></button>
+          <button class="btn btn-dark mx-2" style="height:50px" ><a href="form.html" target="_blank" id="b7"><i class="fas fa-shopping-cart"><p id="x1">GPay</p></i></a></button>
+        </div>
+    
+    </nav>
+    <div class="card" id="cha1">
+        <div class="card-header">
+           <h4>Feedback</h4>
+        </div>
+        <div class="card-body">
+          <form method="post">
+            <textarea class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter Your feedback "></textarea>
+                  <small id="emailHelp" class="form-text text-light">Thanks for your feedback.</small>
+          </form>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom " style="height:50px"> 
+      <div class="navbar-collapse" >
+         <ul class="navbar-nav mr-auto">
+          <li class="nav-item active ">
+            <a class="nav-link" id="c1" href="#" target="_blank"><i class="fas fa-align-justify"></i></a>
+          </li>
+          <li class="nav-item active px-5">
+            <a class="nav-link" id="c1" href="#" target="_blank"><i class="fa fa-home"></i></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" id="c1" href="#" target="_blank"><i class="far fa-address-book"></i></a>
+          </li>
+          <li class="nav-item active px-5">
+            <a class="nav-link" id="c1" href="#" target="_blank"><i class="far fa-address-card"></i></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" id="c1" href="#" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a>
+          </li>
+         </ul>
+      </div>
+</body>
+</html>

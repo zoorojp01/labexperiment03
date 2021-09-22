@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  li:hover{
+    background-color:burlywood;
+   }
+  #s1{
+      margin-right: -30px;
+  }
+ #i2{
+     background-color: burlywood;
+    }
+ 
+  body {
+    background-color:aquamarine;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    width:38%;
+    margin-left: 400px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    background-image: url("image47.jpeg");
+    background-size: cover;
+    color:blanchedalmond;
+  }
+  h4 {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 25px;
+  }
+  .form-control{
+    min-height: 40px;
+    border-radius: 3px; 
+    border-width: 2px;
+    border-color:rgb(179, 102, 67);
+  }
+  .card-footer {
+    
+    border-color: #dee4e7;
+    text-align: center;
+    justify-content: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .card-footer a {
+    color: blanchedalmond;
+  }		
+  .ima{
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 190px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #72ebc2;
+    padding: 10px;
+  }
+  #im1{
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .btn:hover{
+    background: #45aba6;
+    outline: none;
+  }
+  #b1{
+    width:200px;
+    margin-left: 138px;
+    margin-top: 20px;
+  }
+  input[type="radio"]{
+    margin: 0 100px 0 100px;
+  }
+  </style>
+</head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header"  style="width:60px;height:30px;">
+            <a class="navbar-brand" href="">
+                <img src="image27.jpeg" class=" img-fluid " alt="" style="width:60px;height:30px;margin-top: -4px; margin-left: -90px;" >
+            </a>
+          </div>
+          <ul class="nav navbar-nav" style="margin-left: -60px;" id="i1">
+            <li class="active"><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Visit
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" id="i2">
+                  <li><a href="home.html" target="_blank">Home</a></li>
+                  <li><a href="feedback.html" target="_blank">feedback</a></li>
+                  <li><a href="index.html" target="_blank">index</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+          <button class="btn btn-success navbar-btn navbar-right" id="s1">SUBMIT</button>
+        </div>
+      </nav>
+
+      <div class="card">
+
+            <div class="card-header">
+              <div class="ima">
+                <img id="im1" src="image2.jpeg">
+              </div>				
+              <h4 class="card-title">Login Page</h4>	
+            </div><hr>
+
+            <div class="card-body">
+              <form  method="post">
+
+                <div class="form-group">
+                  <label for="name1">Username :</label>
+                     <input type="text" class="form-control" id="name1" placeholder="Enter your name" required="required">	
+                </div>
+
+                <div class="form-group">
+                  <label for="pass1">Password :</label>
+                   <div class="input-group">
+                     <input id="pass1" type="password" class="form-control" name="password" placeholder="Password">
+                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>	
+                   </div>
+                </div>   
+                <div class="form-group">
+                  <label for="email1">Email address :</label>
+                  <textarea class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter Your Email "></textarea>
+                  <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="num1">Pincode :</label>
+                  <input type="number" class="form-control" id="num1"  Placeholder="Enter Pincode(6-digit) " required="required">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"><small>Remember it</small>
+                  </label>
+                </div> 
+                <div class="form-group">
+                  <label for="state">State :</label>
+                      <select class="form-control" id="state"  Placeholder="Enter Your State" required="required"></select>
+                </div>
+                <div class="form-group form-check-inline">
+                  <label for="r1">Gender :   </label>
+                  <label class="form-check-label">
+                    <input class="form-check-input" id="r1" type="radio" name="Gender" style="margin-right: 5px;">Male </label>
+                  <label  class="form-check-label">
+                    <input class="form-check-input" id="r1" type="radio" name="Gender" style="margin-right: 5px;">Female</label>
+                </div>
+                <div class="form-group">
+                  <label for="num2">Number :</label>
+                  <div class="input-group">
+                    <span class="input-group-addon">+91</span>
+                    <input type="number" class="form-control" id="num2"  Placeholder="Enter Your Number " required="required">
+                  </div>
+                </div> 
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success btn-lg login-btn" id="b1">Login</button>
+                </div> 
+              </form>  
+            </div>
+            <hr>
+            <div class="card-footer">
+              <a href="#">Forgot Password?</a>
+            </div>
+      </div>
+      <div class="navbar navbar-inverse fixed-bottom" style="margin: 0px;width:100%"></div>
+  </body>
+</html>

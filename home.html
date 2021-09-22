@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://kit.fontawesome.com/f377f4f9d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<style>
+  body{
+        background-color: aquamarine;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+#n1{position: fixed;}
+  
+  #b1{ color:rgb(193, 236, 75);}
+  #b6{color:red;}
+  #b7{color:snow;}
+  #b3{color:snow;text-decoration: none;}
+  #b5{background-color: teal;}
+  #b5:hover{background-color: thistle;}
+  #x1{color: blue;}
+
+  #l1{color:rgb(98, 233, 170)}
+  #c1{color:ghostwhite;}
+  #c1:hover{color:palevioletred;}
+  #m1{background-color: lightsteelblue;color: lightyellow;}
+  #m2:hover{color:blue;background-color: lightgreen;}
+
+  .navbar{width:100%}
+  .vertical-nav{
+    background-color: rgb(241, 194, 218);
+    min-width: 17rem;
+    width:17rem;
+    height: 100vh;
+    position: fixed;
+    top:50px;
+    left:0;
+    box-shadow: 3px 3px 10px rgb(66, 245, 185);
+  }
+  .page-content{
+    width: calc(100%-17rem);
+    margin-left: 17rem;
+  }
+  .d1.active{margin-left:-17rem;}
+  .con.active{width:100%;margin:0;}
+  .separator{
+    margin: 3rem 0;
+    border-bottom: 1px dashed rgb(0, 17, 11);
+  }
+  .nav-link:hover{
+    background-color:ghostwhite;
+  }
+
+  #p1{text-shadow: 2px 2px 3px black;}
+  #p2{text-shadow: 1px 1px 2px rgb(14, 0, 0);font-size: 20px;}
+  #p3{color:rgb(141, 13, 41);font-size: 18px;text-shadow:1px 1px 0px lightpink;background-color: lightgreen;padding-left: 5px;border: green;box-shadow: 3px 5px 5px green;}
+  span{font-size: 20px;font:bold;color:rgb(2, 2, 15);text-shadow: none;padding-left: 20px;}
+  #p4{margin-top: 50px;color:rgb(141, 13, 41);font-size: 18px;text-shadow:1px 1px 0px lightpink;background-color: lightgreen;border: green;box-shadow: 5px 5px 5px green;padding-left: 0px;}
+  #s1{color:rgb(141, 13, 41); font-size: 18px;text-shadow:1px 1px 0px lightpink;background-color: lightgreen;}
+  #tan1{border-color:2px 2px 2px navy;box-shadow: 3px 3px 5px green;}
+  #tan2{box-shadow: 0px 3px 5px rgb(0, 128, 90);}
+  
+    thead th{
+      color:rgb(238, 248, 248);
+    }
+    table{
+     border-collapse: collapse;
+     margin-left: 170px;
+     margin-top: 50px;
+    }
+    th,td{
+      padding:5px;
+      text-align: center;
+    }
+    td{
+      width: 5px;
+    }
+    tr:nth-child(odd){
+      background-color: pink;
+    }
+    tr:nth-child(even){
+      background-color: palevioletred;
+    }
+
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="n1" style="height:50px"> 
+    <a class="navbar-brand" href="#" id="l1">
+      <img src="image27.jpeg" width=30 height=30 class="d-inline-block align-top">
+      TOURISM
+    </a>
+  
+    <div class="navbar-collapse" >
+       <ul class="navbar-nav mr-auto">
+        <li class="nav-item active ">
+          <a class="nav-link" id="c1" href="home.html" target="_blank"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="c1"><i class="fa fa-cogs" aria-hidden="true"></i>Settings</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="c1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Visit
+          </a>
+          <div class="dropdown-menu" id="m1" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" id="m2" href="feedback.html" target="_blank">feedback</a>
+            <a class="dropdown-item" id="m2" href="form.html" target="_blank">Login</a>
+            <a class="dropdown-item" id="m2" href="index.html" target="_blank">Index</a>
+          </div>
+        </li> 
+      </ul>
+      
+      <button class="btn btn-dark mx-2"><a href="form.html" target="_blank" id="b1"><i class="fas fa-sign-in-alt"  fill="currentColor" fill-rule="evenodd"></i></a></button>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="b5" type="submit"><a href="https://www.google.com/" target="_blank" id="b3">Search</a></button>
+      </form>
+      <button class="btn btn-dark mx-2"><a href="form.html" target="_blank" id="b6"><i class="fas fa-sign-out-alt"></i></a></button>
+      <button class="btn btn-dark mx-2" style="height:50px" ><a href="form.html" target="_blank" id="b7"><i class="fas fa-shopping-cart"><p id="x1">GPay</p></i></a></button>
+    </div>
+
+  </nav>
+   
+<div class="vertical-nav" id="d1">
+  <div class="py-4 px-3 mb-4 ">
+     <div class="madia d-flex align-item-center">
+        <img src="image22.jpeg" width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+           <h4 class="m-0">Profile</h4>
+          <p class="font-weight-normal text-muted mb-0">You can view your profile here</p>
+        </div>
+     </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Dashboard</p>
+      <ul class="nav flex-column  mb-0">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link text-dark" target="_blank"><i class="fa fa-th-large mr-3 text-primary"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark"><i class="fas fa-book-open mr-3 text-primary"></i>Library</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark"><i class="fas fa-user-shield mr-3 text-primary"></i>Play Protect</a>
+        </li>
+        <li class="nav-item">
+          <a href="feedback.html" class="nav-link text-dark" target="_blank"><i class="far fa-question-circle mr-3 text-primary"></i>Help & feedback</a>
+        </li>
+      </ul>
+</div>
+
+<div class="page-content p-5" id="con">
+  <h2 class="display-4 text-warning" id="p1">PLACES</h2>
+  <p class="text-primary" id="p2">Choose your favourite place</p>
+  <div class="separator"></div>
+  <p id="p3"><img src="tan.jpeg" width="400" height="250" id="tan1" alt="Wrong_Path" style="float:right"><span>Thanjavur : </span>
+    Thanjavur is a city in the south Indian state of Tamil Nadu. 
+    Its many temples include the 11th-century Brihadeeswarar Temple, a vast Chola dynasty–era complex with a frescoed interior. 
+    Thanjavur Maratha is home to the centuries-old Saraswathi Mahal Library, with palm-leaf manuscripts, and Thanjavur Art Gallery, with bronze statues. 
+    Tamil University Museum displays coins, folk artifacts and musical instruments.
+    Built out of granite, the vimana tower above the shrine is one of the tallest in South India. 
+    The temple has a massive colonnaded prakara (corridor) and one of the largest Shiva lingas.</p>
+    <p id="p4"><img src="ooty.jpeg" width="400" height="250" id="tan2" alt="Wrong_Path" style="float:left"><span>Ooty : </span>
+     <span id="s1"> Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in southern India's Tamil Nadu state. Founded as a British Raj summer resort, it retains a working steam railway line. Other reminders of its colonial past include Stone House, a 19th-century residence, and the circa-1829 St. Stephen’s Church.
+      Its 55-acre Government Botanical Garden lies on the slopes of Doddabetta Peak.
+      Built out of granite, the vimana tower above the shrine is one of the tallest in South India. 
+      The temple has a massive colonnaded prakara (corridor) and one of the largest Shiva lingas.</span></p>
+      <table class="table table-bordered" style="width: 70%;">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">SI.No</th>
+            <th scope="col">Place_Name</th>
+            <th scope="col" class="col-sm-5">Description</th>
+            <th scope="col">Travel_Fees</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr>
+            <th scope="row">1</th>
+            <td >Kodaikanal</td>
+            <td style="width: 30px;">Kodaikanal is a hill town in the southern Indian state of Tamil Nadu.</td>
+            <td >Rs.500</td>
+          </tr>      
+          <tr>
+            <th scope="row">2</th>
+            <td>Madurai</td>
+            <td>Madurai is an energetic, ancient city on the Vaigai River in Tamil Nadu</td>
+            <td>Rs.400</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Coimbatore</td>
+            <td>Coimbatore is a city in Tamil Nadu</td>
+            <td>Rs.1000</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>mamallapuram</td>
+            <td>Mamallapuram,is a town in Chennai</td>
+            <td>Rs.600</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</body>
+</html>
